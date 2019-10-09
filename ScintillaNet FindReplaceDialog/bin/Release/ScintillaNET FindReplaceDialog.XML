@@ -33,12 +33,6 @@
             Creates a new instance of FindAllResultsPanel
             </summary>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.FindAllResults.FindAllResultsPanel.Scintilla">
-            <summary>
-            Gets or sets the Scintilla control that was searched to generate the find results.
-            Allows the FindAllResults list to be double clicked and results indicated in the original Scintilla.
-            </summary>
-        </member>
         <member name="M:ScintillaNET_FindReplaceDialog.FindAllResults.FindAllResultsPanel.UpdateFindAllResults(ScintillaNET_FindReplaceDialog.FindReplace,System.Collections.Generic.List{ScintillaNET_FindReplaceDialog.CharacterRange})">
             <summary>
             Updates the find all results panel
@@ -61,6 +55,12 @@
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:ScintillaNET_FindReplaceDialog.FindAllResults.FindAllResultsPanel.Scintilla">
+            <summary>
+            Gets or sets the Scintilla control that was searched to generate the find results.
+            Allows the FindAllResults list to be double clicked and results indicated in the original Scintilla.
             </summary>
         </member>
         <member name="T:ScintillaNET_FindReplaceDialog.FindOption">
@@ -104,18 +104,6 @@
             Creates an instance of the FindReplace class.
             </summary>
         </member>
-        <member name="E:ScintillaNET_FindReplaceDialog.FindReplace.KeyPressed">
-            <summary>
-            Triggered when a key is pressed on the Find and Replace Dialog.
-            </summary>
-        </member>
-        <member name="T:ScintillaNET_FindReplaceDialog.FindReplace.KeyPressedHandler">
-            <summary>
-            Handler for the key press on a Find and Replace Dialog.
-            </summary>
-            <param name="sender">The sender.</param>
-            <param name="e">The key info of the key(s) pressed.</param>
-        </member>
         <member name="M:ScintillaNET_FindReplaceDialog.FindReplace.ClearAllHighlights">
             <summary>
             Clears highlights from the entire document
@@ -129,22 +117,27 @@
         </member>
         <member name="M:ScintillaNET_FindReplaceDialog.FindReplace.CreateIncrementalSearcherInstance">
             <summary>
-            Creates and returns a new <see cref="P:ScintillaNET_FindReplaceDialog.FindReplace.IncrementalSearcher" /> object.
+            Creates and returns a new <see cref="P:ScintillaNET_FindReplaceDialog.FindReplace.IncrementalSearcher"/> object.
             </summary>
-            <returns>A new <see cref="P:ScintillaNET_FindReplaceDialog.FindReplace.IncrementalSearcher" /> object.</returns>
+            <returns>A new <see cref="P:ScintillaNET_FindReplaceDialog.FindReplace.IncrementalSearcher"/> object.</returns>
         </member>
         <member name="M:ScintillaNET_FindReplaceDialog.FindReplace.CreateWindowInstance">
             <summary>
-            Creates and returns a new <see cref="T:ScintillaNET_FindReplaceDialog.FindReplaceDialog" /> object.
+            Creates and returns a new <see cref="T:ScintillaNET_FindReplaceDialog.FindReplaceDialog"/> object.
             </summary>
-            <returns>A new <see cref="T:ScintillaNET_FindReplaceDialog.FindReplaceDialog" /> object.</returns>
+            <returns>A new <see cref="T:ScintillaNET_FindReplaceDialog.FindReplaceDialog"/> object.</returns>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.FindReplaceDialog.AutoPosition">
+        <member name="E:ScintillaNET_FindReplaceDialog.FindReplace.KeyPressed">
             <summary>
-            Gets or sets whether the dialog should automatically move away from the current
-            selection to prevent obscuring it.
+            Triggered when a key is pressed on the Find and Replace Dialog.
             </summary>
-            <returns>true to automatically move away from the current selection; otherwise, false.</returns>
+        </member>
+        <member name="T:ScintillaNET_FindReplaceDialog.FindReplace.KeyPressedHandler">
+            <summary>
+            Handler for the key press on a Find and Replace Dialog.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The key info of the key(s) pressed.</param>
         </member>
         <member name="F:ScintillaNET_FindReplaceDialog.FindReplaceDialog.components">
             <summary>
@@ -163,13 +156,12 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.IncrementalSearcher.AutoPosition">
+        <member name="P:ScintillaNET_FindReplaceDialog.FindReplaceDialog.AutoPosition">
             <summary>
-            Gets or sets whether the control should automatically move away from the current
+            Gets or sets whether the dialog should automatically move away from the current
             selection to prevent obscuring it.
             </summary>
-            <returns>true to automatically move away from the current selection; otherwise, false.
-            If ToolItem is enabled, this defaults to false.</returns>
+            <returns>true to automatically move away from the current selection; otherwise, false.</returns>
         </member>
         <member name="F:ScintillaNET_FindReplaceDialog.IncrementalSearcher.components">
             <summary> 
@@ -187,6 +179,14 @@
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="P:ScintillaNET_FindReplaceDialog.IncrementalSearcher.AutoPosition">
+            <summary>
+            Gets or sets whether the control should automatically move away from the current
+            selection to prevent obscuring it.
+            </summary>
+            <returns>true to automatically move away from the current selection; otherwise, false.
+            If ToolItem is enabled, this defaults to false.</returns>
         </member>
         <member name="F:ScintillaNET_FindReplaceDialog.GoToDialog.components">
             <summary>
